@@ -1,0 +1,569 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+.menu{
+    background : #fff;
+    padding: 9px 20px;
+}
+.menu .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-transform: none;
+    color: #000;
+}
+/*SECCION DE INTRO*/
+#intro{
+    background: url(/imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Oswald';
+    display: flex;
+}
+#intro .izquierda{
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 60%;
+    padding: 65px 75px;
+}
+#intro .derecha {
+    width: 57%;
+    color: #fff;
+    height: 503px;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0)80% , #fff 80%);
+}
+#intro .contenido{
+    background : orange;
+    padding:1px 50px 40px 50px ;
+}
+#intro .izquierda p {
+    font-size: 14px;
+    letter-spacing: 18px;
+}
+#intro h1 {
+    font-size: 55px;
+    font-weight: 100;
+    letter-spacing: 19px;
+    margin: 0;
+  margin-bottom: 30px;
+  }
+#intro a , #programas a , #testimonios a {
+    text-decoration :none;
+    color: #000;
+    font-size:20px;
+    letter-spacing: 7px;
+    border-bottom: 2px solid orange;
+    padding-bottom: 13px;
+    padding: 0 18 13px 10px;
+}
+#intro .derecha a {
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+
+}
+#intro .derecha p{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+/*PROGRAMAS*/
+#programas{
+    padding-top: 90px;
+    text-align: center;
+}
+.naranja{
+    color: orange;
+
+}
+#programas .cero{
+    font-size: 80px;
+    margin-bottom: 0;
+}
+#programas .ini{
+    letter-spacing: 18px;
+    font-size: 15px
+}
+#programas h2{
+    font-size: 64px;
+    font-weight: 100;
+    letter-spacing: 16px;
+    margin: 0;
+    margin-top: 16px;
+}
+#programas p {
+    font-family: 'open Sans';
+    color: #666;
+    font-size: 15px;
+    width: 63%;
+    margin: auto;
+    line-height: 30px;
+}
+#programas a {
+    margin-top: 60px;
+    display: inline-block;
+
+}
+.contenedor-programas{
+    display: flex;
+    margin-top: 50px;
+    width: 88%;
+    margin: auto;
+
+}
+#programas #uno{
+    background: #00bcd4;
+    color: #fff;
+}
+#uno p ,#dos p, #tres p{
+    color: #fff;
+    text-align: left;
+    width:100% ;
+}
+h3{
+    font-size:25px;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.programa{
+    padding: 45px 47px;
+    box-shadow: 58px 78px 120px -42px rgba(0, 0, 0, 0.3);
+}
+#dos{
+    background : #ff5722;
+    color: #fff;
+    position :relative;
+    top: 120px;
+}
+#tres p{
+    color: #000;
+
+}
+/*Video*/
+#section-video{
+    padding-top: 90px;
+    text-align: center;
+}
+#section-video .contenedor{
+    position: relative;
+}
+
+#section-video .botones{
+    position: absolute;
+    top: 35%;
+    left: 46%;
+}
+#section-video i{
+    font-size: 125px;
+    color: #fff;
+}
+#section-video button{
+    border: 0;
+    background:none;
+}
+/*UNETE*/
+#unete {
+    display: flex;
+    padding-top: 200px;
+}
+#unete .izquierda{
+    width: 40%;
+    background:orange;
+    margin-left: 100px;
+    height: 340px;
+    position: relative;
+}
+#unete img {
+    width: 47%;
+}
+#unete .derecha {
+    width: 53%;
+    position: relative;
+    background :url(/imagenes/join-back.jpg);
+    background-size: cover;
+}
+#unete .izquierda a {
+    color: #fff;
+    padding : 1px solid #fff;
+    padding: 15px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald';
+    letter-spacing: 5px;
+    position: absolute;
+    top: 8%;
+    left: 32%;
+}
+#unete #uno{
+    position: absolute;
+    top: 24%;
+    left: 55%;
+    z-index: 1;
+    width: 44%;
+}
+#unete #dos{
+    position: absolute;
+    top: -44%;
+}
+#untete #tres {
+    position: absolute;
+    left: 47%;
+    top: 24%;
+    width: 44%;
+}
+/*TESTIMONIOS*/
+
+
+#testimonios {
+    padding-top: 90px;
+    text-align: center;
+  }
+  
+  span.comillas {
+    font-size: 120px;
+    color: orange;
+  }
+  
+  #testimonios h2 {
+    font-size: 63px;
+    font-weight: 100;
+    letter-spacing: 16px;
+    margin: 0;
+    margin-bottom: 36px;
+    font-family: 'Oswald';
+  }
+  
+  #testimonios a {
+    font-family: 'Oswald';
+  }
+  
+  .contenedor-testimonio {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+  }
+  
+  .testimonio {
+    width: 40%;
+    margin-right: 40px;
+  }
+  
+  .testimonio .contenido {
+    display: flex;
+  }
+  
+  .foto {
+      background: url(/imagenes/gimnasio.png);
+      background-size: cover;
+      width: 384px;
+      height: 85px;
+      border-radius: 100%;
+      margin-top: 22px;
+      background-position: center;
+  }
+  
+  .testimonio p {
+    color: #666;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 24px;
+    line-height: 30px;
+    font-family: 'Open Sans';
+  }
+  
+  p.nombre {
+    margin-left: 125px;
+    font-weight: bold;
+  }
+  /*CONTACTO*/
+
+  #contacto{
+      background :url(/imagenes/contacto.jpg);
+      
+      font-family: 'Oswald';
+      color: #fff;
+      display: flex;
+  }
+  #contacto .izquierda{
+      padding: 100px;
+      width: 43%;
+      letter-spacing: 18px;
+  }
+
+  #contacto h2 {
+      font-size: 66px;
+      font-weight: 100;
+      letter-spacing: 19px;
+      margin: 0;
+      margin-bottom: 30px;
+  }
+  #contacto form input[type="text"], #contacto form input[type="email"], #contacto form textarea {
+    width: 100%;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 34px;
+    font-family: 'Oswald';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+  }
+  ::placeholder{
+      color:#fff;
+
+  }
+  input[type="submit"] {
+    background: none;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Oswald';
+    letter-spacing: 5px;
+    float: right;
+  }
+#contacto .derecha{
+    background : orange;
+    align-self : flex-end;
+    padding: 5px 50px 50px 50px;
+    width: 30%;
+}
+
+.horas{
+    box-shadow: 0px 70px 120px -42px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 32px;
+}
+.horas ul{
+    list-style:none;
+    font-family: 'Open Sans' , sans-serif;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.entrada {
+    background: #fff;
+    color: #000;
+    padding: 30px;
+}
+.entrada a {
+    text-decoration:  none;
+    color: #000;
+    border: 1px solid orange;
+    padding: 22px 30px;
+    display: inline-block;
+    font-size: 17px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+
+}
+@media screen and (max-width: 800px) {
+
+    nav {
+      position: absolute;
+      top: 15%;
+      left: 0;
+      width: 100%;
+      background: #000;
+      display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    float: right;
+  }
+  
+  nav ul li {
+      display: block;
+      margin-bottom: 20px;
+  }
+  
+  nav ul li a {
+      color: #fff;
+  }
+  
+  #intro .izquierda p {
+      letter-spacing: 9px;
+  }
+  
+  #intro h1 {
+      font-size: 36px;
+      letter-spacing: 13px;
+  }
+  
+  #intro a, #programas a, #testimonios a {
+      font-size: 13px;
+      letter-spacing: 4px;
+  }
+  
+  #intro .izquierda {
+      width: 100%;
+      padding: 24px 26px;
+      height: 258px;
+  }
+  
+  #intro {
+      flex-direction: column;
+  }
+  
+  #intro .derecha {
+      width: 100%;
+      height: 200px;
+  }
+  
+  #programas .cero {
+      font-size: 57px;
+  }
+  
+  #programas .ini {
+      letter-spacing: 12px;
+  }
+  
+  #programas h2 {
+      font-size: 34px;
+  }
+  
+  #programas p {
+      width: 100%;
+  }
+  
+  .contenedor-programas {
+      flex-direction: column;
+      margin-top: 40px;
+  }
+  
+  #dos {
+      position: relative;
+      top: 35px;
+  }
+  
+  #tres {
+      margin-top: 50px;
+  }
+  
+  #video {
+    width: 342px;
+        height: 298px;
+  }
+  
+  #section-video i {
+    font-size: 62px;
+  }
+  
+  #section-video .botones {
+      top: 42%;
+      left: 40%;
+  }
+  
+  #section-video {
+      padding-top: 0;
+  }
+  
+  #unete {
+      flex-direction: column;
+  }
+  
+  #unete .izquierda {
+      width: 100%;
+      margin-left: 0;
+  }
+  
+  #unete #uno {
+      top: 34%;
+      left: 30%;
+  }
+  
+  #unete .derecha {
+      width: 100%;
+  }
+  
+  #unete #tres {
+      left: 47%;
+      top: 82px;
+      width: 53%;
+  }
+  
+  #unete #dos {
+      top: 1px;
+  }
+  
+  #unete img {
+      width: 63%;
+  }
+  
+  #testimonios {
+      padding-top: 390px;
+  }
+  
+  #testimonios h2 {
+      font-size: 24px;
+  }
+  
+  .contenedor-testimonios {
+      flex-direction: column;
+  }
+  
+  .testimonio {
+      width: 100%;
+  }
+  
+  .foto {
+      height: 59px;
+  }
+  
+  #contacto {
+      flex-direction: column;
+  }
+  
+  #contacto .izquierda {
+      width: 100%;
+  }
+  
+  #contacto .izquierda {
+      padding: 26px;
+  }
+  
+  #contacto .izquierda p {
+      letter-spacing: 9px;
+  }
+  
+  #contacto h2 {
+      font-size: 35px;
+  }
+  
+  #contacto form input[type="text"], #contacto form input[type="email"], #contacto form textarea {
+      width: 82%;
+  }
+  
+  input[type="submit"] {
+      float: left;
+  }
+  
+  #contacto .derecha {
+      padding: 5px 18px 50px 17px;
+      width: 91%;
+  }
+  

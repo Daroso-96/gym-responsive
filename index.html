@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:ital,wght@0,200;1,200;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Fitness Hero</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="contenedor">
+            <p class="logo">Fitness hero master</p>
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Precios</li>
+                    <li>Sobre nosotros</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <section id="intro">
+        <div class="izquierda">
+            <p>ENTRENA CON NOSOTROS</p>
+            <h1>¡VAMOS A PONERNOS EN FORMA!</h1>
+            <a href="">Empieza ya</a>
+        </div>
+        <div class="derecha">
+            <div class="contenido">
+                <p>OFERTA ESPECIAL : 3 DIAS GRATIS</p>
+                <a href="">Entra aquí</a>
+            </div>
+        </div>
+    </section>
+    <section id="programas">
+        <div class="contenedor">
+          <div class="naranja cero">0.00</div>
+          <div class="naranja ini">Iniciación</div>
+          <h2>Caracteristicas de nuestros programas</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+          <a href="">TODOS NUESTROS PROGRAMAS</a>
+          <div class="contenedor-programas">
+            <div class="programa" id="uno">
+              <h3>Entrenamiento funcional</h3>
+              <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id</p>
+            </div>
+            <div class="programa" id="dos">
+              <h3>Crossfit</h3>
+              <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id</p>
+            </div>
+            <div class="programa" id="tres">
+              <h3>Boxeo</h3>
+              <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-video">
+          <div class="contenedor">
+              <video id="video" width="900px" height="600px" src="recursos/boxeo.mp4"></video>
+               <div class="botones">
+                   <button id="boton" onclick="playVideo()"><i class="far fa-play-circle"></i></button>
+               </div>
+            </div>
+      </section>
+        
+
+      <!--JS-->
+      <script>
+          let video = document.getElementById('video');
+          let boton = document.getElementById('boton');
+          function playVideo(){
+              video.play();
+              boton.style.display = 'none';
+          }
+          video.addEventListener('ended', function(){
+              boton.style.display = 'block';
+          });
+      </script>
+
+      <section id="unete">
+          <div class="izquierda">
+              <a href="">UNETE</a>
+              <img id="uno" src="/imagenes/imagen1.jpg" alt="" srcset="">
+          </div>
+
+          <div class="derecha">
+           
+            <img id="dos" src="/imagenes/imagen2.jpg" alt="" srcset="">
+            <img  id= "tres" src="/imagenes/imagen3.jpg" alt="" srcset="">
+        </div>
+
+      </section> 
+      <section id="testimonios">
+          <div class="contenedor">
+              <span class="comillas"></span>
+              <h2>Lo que dicen nuestros clientes</h2>
+              <a href="">UNETE A NOSOTROS</a>
+              <div class="contenedor-testimonio">
+                  <div class="testimonio">
+                      <div class="contenido">
+                          <div class="foto"></div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptates, libero molestiae rerum optio quas. Dolorum, eos quas numquam libero ipsam, illum, laboriosam corporis laborum porro fuga deserunt et quod!</p>
+                          
+                      </div>
+                      <p class="nombre">Pepito Peréz</p>
+                  </div>
+
+
+                  <div class="testimonio">
+                    <div class="contenido">
+                        <div class="foto"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptates, libero molestiae rerum optio quas. Dolorum, eos quas numquam libero ipsam, illum, laboriosam corporis laborum porro fuga deserunt et quod!</p>
+                        
+                    </div>
+                    <p class="nombre">Juanita Juaréz</p>
+                </div>
+
+              </div>
+          </div>
+      </section>
+
+      <section id="contacto">
+          <div class="izquierda">
+              <p>¿Tienes alguna duda?</p>
+              <h2>¡Escribenos!</h2>
+              <form action="">
+                  <input type="text" placeholder="Nombre">
+                  <input type="email" placeholder="Email">
+                  <textarea placeholder="Message"></textarea>
+                  <input type="submit" value="Enviar">
+              </form>
+          </div>
+          <div class="derecha">
+              <div class="horario">
+                  <h3>NUESTROS HORARIOS</h3>
+                  <ul>
+                      <li>Lunes-Viernes:5:30 am - 10:30pm</li>
+                      <li>Sabados-Domingos:7:30 am - 6:30pm</li>
+                      <li>Festivos:10 am - 4pm</li>
+                  </ul>
+              </div>
+              <div class="entradas">
+                  <h3>¡3 DIAS GRATIS!</h3>
+                  <a href="">Empieza hoy</a>
+              </div>
+          </div>
+      </section>
+    
+</body>
+</html>
